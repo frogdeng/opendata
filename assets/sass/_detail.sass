@@ -1,0 +1,260 @@
+@import "bourbon";
+@import "susy";
+@import _map.scss
+
+// shorthand
+$desktop: 12 (70px 30px) split
+$pad: 6 (80px 40px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+$breakpoint_desktop: 891px
+$breakpoint_pad: 0 890px
+
+
+$susy: (debug: (image: hide))
+
+
+.detail
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 12px
+		.detail_title
+			padding: 10px 12px
+			border-bottom: 5px solid #eee
+			margin-bottom: 13px
+			h4
+				font-size: 28px
+				color: #900
+				line-height: 1.5
+				
+		.detail_description	
+			+span(6)
+			padding: 0 20px
+			margin-bottom: 40px
+
+			.detail_list
+				border-bottom: 1px dashed #c0c0c0
+				padding: 8px 0
+				display: flex
+				justify-content: flex-start			
+				align-items: flex-start		
+				.detail-th
+					flex: 0 0 120px
+					float: left
+					font-size: 14px
+					font-weight: 700
+					line-height: 1.5
+					color: #555
+				.detail-td
+					flex: 1 0 100px
+					p 
+						font-size: 13px
+						color: #888
+						word-wrap: break-word
+						word-break: break-all
+
+		.detail_photos
+			+span(6)
+			// background: #920
+			.bigphoto
+				margin-bottom: 20px
+				.bx-pager_1
+					img 
+						width: 82px
+						margin-right: 5px
+						border: 2px solid #c0c0c0
+			.apply-authorization
+				display: block
+				width: 200px
+				height: 35px
+				border-radius: 3px
+				background: #ed7000
+				display: flex
+				justify-content: center		
+				align-items: center
+				color: #FFF
+				font-size: 14px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 12px
+		.detail_title
+			padding: 10px 20px
+			border-bottom: 5px solid #eee
+			margin-bottom: 23px
+			h4
+				font-size: 28px
+				color: #900
+				line-height: 1.5
+				
+		.detail_description	
+			+span(7)
+			padding: 0 20px
+			margin-bottom: 40px
+
+			.detail_list
+				border-bottom: 1px dashed #c0c0c0
+				padding: 13px 0
+				display: flex
+				justify-content: flex-start			
+				align-items: center
+				.detail-th
+					flex: 0 0 150px
+					width: 150px
+					float: left
+					font-size: 15px
+					font-weight: 700
+					line-height: 1.5
+					color: #555
+				.detail-td
+					flex: 1 0 200px
+					p 
+						font-size: 14px
+						color: #888
+						word-wrap: break-word
+						word-break: break-all
+
+		.detail_photos
+			+span(5)
+			// background: #920
+			.bigphoto
+				margin-bottom: 20px
+				.bx-pager_1
+					img 
+						width: 82px
+						margin-right: 5px
+						border: 2px solid #c0c0c0
+			.apply-authorization
+				display: block
+				width: 200px
+				height: 35px
+				border-radius: 3px
+				background: #ed7000
+				display: flex
+				justify-content: center		
+				align-items: center
+				color: #FFF
+				font-size: 14px
+
+
+
+
+.bottom_detail
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 20px
+		border-top: 5px solid #eee
+		margin-bottom: 40px
+		margin-top: 30px
+		.bottom_detail_list
+			border-bottom: 1px solid #f1f1f1
+			display: flex
+			justify-content: flex-start			
+			align-items: center
+			.detail-th
+				flex: 0 0 100px
+				width: 150px
+				float: left
+				font-size: 15px
+				font-weight: 700
+				line-height: 1.5
+				color: #555
+			.detail-td
+				flex: 1 0 100px
+				padding: 8px 0
+				p 
+					font-size: 14px
+					color: #888
+
+				a 
+					font-size: 14px
+					color: #ed7000
+					display: block
+					float: left
+					padding: 5px 10px
+					background: #f1f1f1
+					border: 1px solid #FFF
+					margin-right: 5px
+					margin-bottom: 5px
+					transition: all .3s
+					&:hover
+						background: #ed7000
+						color: #FFF
+
+		.bottom_detail_tag
+			margin-top: 20px
+			.tag-a
+				float: left
+				font-size: 13px
+				padding: 5px 15px
+				border: 1px solid #c0c0c0
+				margin-right: 10px
+				margin-bottom: 5px
+				color: #888
+				i 
+					margin-right: 3px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 20px
+		border-top: 5px solid #eee
+		margin-bottom: 40px
+		.bottom_detail_list
+			border-bottom: 1px solid #f1f1f1
+			display: flex
+			justify-content: flex-start			
+			align-items: center
+			
+			.detail-th
+				flex: 0 0 150px
+				width: 150px
+				float: left
+				font-size: 15px
+				font-weight: 700
+				line-height: 1.5
+				color: #555
+			.detail-td
+				flex: 1 0 200px
+				padding: 8px 0
+				p 
+					font-size: 14px
+					color: #888
+
+				a 
+					font-size: 14px
+					color: #ed7000
+					display: block
+					float: left
+					padding: 5px 10px
+					background: #f1f1f1
+					border: 1px solid #FFF
+					margin-right: 5px
+					margin-bottom: 5px
+					transition: all .3s
+					&:hover
+						background: #ed7000
+						color: #FFF
+
+		.bottom_detail_tag
+			margin-top: 20px
+			.tag-a
+				float: left
+				font-size: 13px
+				padding: 5px 15px
+				border: 1px solid #c0c0c0
+				margin-right: 10px
+				color: #888
+				i 
+					margin-right: 3px
+
+
+
+
+
+
+
+

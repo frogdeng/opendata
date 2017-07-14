@@ -1,0 +1,114 @@
+@import "bourbon";
+@import "susy";
+@import _map.scss
+
+
+
+// shorthand
+$desktop: 12 (70px 30px) split
+$pad: 6 (80px 40px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+$breakpoint_desktop: 891px
+$breakpoint_pad: 0 890px
+
+
+$susy: (debug: (image: hide))
+
+
+
+
+
+
+.data_container
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		
+
+
+.breac_crumbs
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		height: 20px
+		padding: 10px
+		margin-bottom: 30px
+
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		color: #666
+		font-size: 14px
+		p 
+			font-size: 14px
+			margin-right: 10px
+			margin-left: 10px
+			color: #0a93a1
+		a 
+			font-size: 14px
+			margin-right: 10px
+			margin-left: 10px
+			color: #888 
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		height: 50px
+		padding: 0 10px
+		margin-bottom: 20px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		color: #666
+		font-size: 14px
+		p 
+			font-size: 14px
+			margin-right: 10px
+			margin-left: 10px
+			color: #0a93a1
+		a 
+			font-size: 14px
+			margin-right: 10px
+			margin-left: 10px
+			color: #888 
+
+.search_condition
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 10px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 20px
+		p 
+			font-size: 14px
+			margin-right: 10px
+			margin-left: 10px
+			color: #444
+		.condition
+			padding: 5px 12px 5px 12px
+			margin-right: 15px
+			border: 1px solid #c0c0c0
+			font-size: 13px
+			color: #888
+			i 
+				font-size: 15px
+				margin-left: 5px
+				color: #c0c0c0
+				transition: all .3s
+				&:hover
+					color: #777
+
+
+

@@ -1,8 +1,8 @@
 
 @import reset
 @import _index
-@import _gallery
-@import _detail
+@import _data
+
 
 // @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
 
@@ -280,86 +280,55 @@ header
 	width: 100%
 	background: #6c7c92
 	background-repeat: repeat-x
-	padding-top: 20px
+	padding: 40px 0
+
 
 footer
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		padding: 0 20px
-
-		.relatedlinks
-			margin-bottom: 20px
-			margin-top: 20px
-			.ad
-				+span(3)
-				margin-bottom: 10px
-
-		.toggle_btn
-			display: none
-		
 		.footer_link
-			+span(6)
-			margin-bottom: 20px
-			a
-				display: block
-				float: left
-				margin-right: 35px
+			height: 50px
+			margin-top: 10px
+			a 
+				margin-right: 15px
 				color: #FFF
-				font-size: 16px
-				margin-bottom: 13px
+				font-size: 13px
+
+
 		.copyright
-			+span(6)	
 			width: 100%
-			padding-bottom: 30px
+			padding-bottom: 10px
 			p 
 				color: #c0c0c0
 				font-size: 13px
 				line-height: 1.3
 				margin-bottom: 8px
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 0 20px
 
-		.relatedlinks
-			margin-bottom: 20px
-			margin-top: 20px
-			.ad
-				+span(2)
-
-		.toggle_btn
-			// width: 120px
-			height: 45px
-			background: #333
-			border-bottom: 2px solid #33797c
-			font-size: 15px
-			color: #FFF
-			cursor: pointer
-			display: flex
-			justify-content: center			
-			align-items: center
-			i 
-				margin-left: 10px
-
-	
 		.footer_link
 			height: 50px
-			margin-top: 30px
+			margin-top: 10px
 			a 
-				margin-right: 35px
+				margin-right: 15px
 				color: #FFF
-				font-size: 16px
+				font-size: 13px
 
 
 		.copyright
 			width: 100%
-			padding-bottom: 30px
+			padding-bottom: 10px
 			p 
 				color: #c0c0c0
 				font-size: 13px
 				line-height: 1.3
 				margin-bottom: 8px
+
 
 
 

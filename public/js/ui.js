@@ -1,24 +1,32 @@
 
 $(function(){
 
-	$( document ).ready(function() {
  	
-	$('.bxslider_1').bxSlider({
-	  pagerCustom: '.bx-pager_1'
-	});	
+	// $('.bxslider_1').bxSlider({
+	//   pagerCustom: '.bx-pager_1'
+	// });	
 
-  $(".hamburg").click(function(){
-     $('.aside').delay(200).toggleClass("hamburg-open");
-     $(this).delay(200).toggleClass("active");
-    });
+ //  $(".hamburg").click(function(){
+ //     $('.aside').delay(200).toggleClass("hamburg-open");
+ //     $(this).delay(200).toggleClass("active");
+ //    });
 
 
-});
 
-	// $('.advanced_search_btn').click(function(){
-	// 	$('.advanced_search').toggleClass( "h300" )
-	// 	return false
-	// });
+
+	$('.boxtitle').click(function(){
+		// $('.display_1').toggleClass( "active" )
+  		if($(this).hasClass("open")){
+			$(this).removeClass("open");
+			$(this).parent().find('.display_1').slideUp(200);
+		} else{
+			$(this).addClass("open");
+			$(this).parent().find('.display_1').slideDown(300);
+		}
+
+
+		
+	});
 
 	
 	// $('.toggle_btn').click(function(){

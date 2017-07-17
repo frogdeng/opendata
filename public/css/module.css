@@ -211,6 +211,84 @@ a {
     font-size: 30px; } }
 
 @media (min-width: 0) and (max-width: 890px) {
+  .pages {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .pages:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .pages a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    font-size: 14px;
+    margin: 0 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all .3s; }
+  .pages a:hover {
+    border: 1px solid #eee;
+    background: #0a93a1;
+    color: #FFF; } }
+
+@media (min-width: 891px) {
+  .pages {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .pages:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .pages a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    font-size: 14px;
+    margin: 0 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all .3s; }
+  .pages a:hover {
+    border: 1px solid #eee;
+    background: #0a93a1;
+    color: #FFF; } }
+
+.mainblue {
+  background: #0a93a1;
+  color: #FFF; }
+
+@media (min-width: 0) and (max-width: 890px) {
   .data_container {
     max-width: 720px;
     margin-left: auto;
@@ -337,6 +415,169 @@ a {
     transition: all .3s; }
   .search_condition .condition i:hover {
     color: #777; } }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .data_collection {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .data_collection:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .data_collection {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ddd; }
+  .data_collection:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .data_container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .data_container:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .data_container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .data_container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .data_container .classification_screening {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+    height: 900px; }
+  .data_container .classification_screening .filter_btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #1b7673;
+    color: #FFF;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .data_container .classification_screening h5 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .data_container .classification_screening .toolbox {
+    width: 100%;
+    border: 1px solid #4ca3a0;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #eee; }
+  .data_container .classification_screening .toolbox .boxtitle {
+    background: #4ca3a0;
+    height: 43px;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #FFF;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer; }
+  .data_container .classification_screening .toolbox .boxtitle .toggle_btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .data_container .classification_screening .toolbox .boxtitle .toggle_btn i {
+    font-size: 18px; }
+  .data_container .classification_screening .toolbox .box_display {
+    transition: all .3s; }
+  .data_container .classification_screening .toolbox .box_display .boxsearch {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; }
+  .data_container .classification_screening .toolbox .box_display .boxsearch input[type=text] {
+    height: 35px;
+    width: 100%;
+    padding: 5px; }
+  .data_container .classification_screening .toolbox .box_display .boxsearch ::-webkit-input-placeholder {
+    color: #999;
+    font-size: 13px;
+    padding: 5px; }
+  .data_container .classification_screening .toolbox .box_display .boxsearch :-ms-input-placeholder {
+    color: #999;
+    font-size: 13px;
+    padding: 5px; }
+  .data_container .classification_screening .toolbox .box_display .boxsearch ::placeholder {
+    color: #999;
+    font-size: 13px;
+    padding: 5px; }
+  .data_container .classification_screening .toolbox .box_display .boxitem {
+    padding: 0 10px;
+    margin-bottom: 10px; }
+  .data_container .classification_screening .toolbox .box_display .boxitem .datalink {
+    display: block;
+    width: 100%;
+    padding: 8px 5px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px; }
+  .data_container .classification_screening .toolbox .box_display .boxitem .datalink:hover {
+    background-color: #555;
+    color: #FFF; }
+  .data_container .classification_screening .toolbox .box_display .box_showmore {
+    background-color: #555;
+    height: 40px;
+    color: #FFF;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px; }
+  .data_container .data_detail {
+    width: 65%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+    height: 900px;
+    background-color: #123; } }
+
+.active {
+  height: auto !important;
+  display: block !important; }
 
 body {
   background: #FFF;
@@ -701,77 +942,3 @@ h2 {
     font-size: 13px;
     line-height: 1.3;
     margin-bottom: 8px; } }
-
-@media (min-width: 0) and (max-width: 890px) {
-  .pages {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .pages:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .pages a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #eee;
-    font-size: 14px;
-    margin: 0 5px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    transition: all .3s; }
-  .pages a:hover {
-    border: 1px solid #eee;
-    background: #5fb8eb;
-    color: #FFF; } }
-
-@media (min-width: 891px) {
-  .pages {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .pages:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .pages a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #eee;
-    font-size: 14px;
-    margin: 0 5px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    transition: all .3s; }
-  .pages a:hover {
-    border: 1px solid #eee;
-    background: #5fb8eb;
-    color: #FFF; } }

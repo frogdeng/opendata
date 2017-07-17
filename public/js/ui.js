@@ -15,14 +15,14 @@ $(function(){
 
 
 	$('.boxtitle').click(function(){
-		// $('.display_1').toggleClass( "active" )
-  		if($(this).hasClass("open")){
-			$(this).removeClass("open");
-			$(this).parent().find('.display_1').slideUp(200);
-		} else{
-			$(this).addClass("open");
-			$(this).parent().find('.display_1').slideDown(300);
-		}
+		$('.display_1').toggleClass( "active" )
+  // 		if($(this).hasClass("open")){
+		// 	$(this).removeClass("open");
+		// 	$(this).parent().find('.display_1').slideUp(200);
+		// } else{
+		// 	$(this).addClass("open");
+		// 	$(this).parent().find('.display_1').slideDown(300);
+		// }
 
 
 		

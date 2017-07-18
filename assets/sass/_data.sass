@@ -19,20 +19,6 @@ $susy: (debug: (image: hide))
 
 
 
-
-
-
-.data_container
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
-		
-
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		
-
-
 .breac_crumbs
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -163,6 +149,8 @@ $susy: (debug: (image: hide))
 
 
 
+
+// data_container
 .data_container
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -174,104 +162,119 @@ $susy: (debug: (image: hide))
 		.classification_screening
 			margin-bottom: 40px
 			+span(3)
-			height: 900px
-			.filter_btn
-				display: block
-				width: 100%
-				height: 40px
-				font-size: 16px
-				border-radius: 3px
-				border: 1px solid #c0c0c0
-				color: #888
-				display: flex
-				justify-content: center
-				align-items: center
-			h5 
-				font-size: 18px
-				margin-bottom: 10px
-
 			
-			.toolbox
-				width: 100%
-				// border-bottom: 2px solid #c0c0c0
-				padding: 0
-				padding-bottom: 5px
-				margin-bottom: 10px
-				background-color: #eee 
-				.boxtitle
-					background: #0a93a1
-					height: 43px
-					font-size: 16px
-					padding: 5px 10px
-					color: #FFF
-					display: flex
-					justify-content: flex-start
-					align-items: center
-					position: relative
-					cursor: pointer
-					.toggle_btn
-						position: absolute
-						width: 40px
-						height: 40px
-						right: 0
-						top: 0
-						display: flex
-						justify-content: center
-						align-items: center
-						i 
-							font-size: 18px
-				.box_display
-					// display: none
-					
-					transition: all .3s
-					.boxsearch
-						// display: none
-						padding: 10px
-						border-bottom: 1px solid #ddd
-						input[type=text]
-							height: 35px
-							width: 100%
-							padding: 5px
-						::placeholder
-							color: #999
-							font-size: 13px
-							padding: 5px
-
-					.boxitem
-						// display: none
-						padding: 0 10px
-						margin-bottom: 10px
-						.datalink
-							display: block
-							width: 100%
-							padding: 8px 5px
-							border-bottom: 1px solid #cfcfcf
-							font-size: 14px
-							&:hover
-								background-color: #555
-								color: #FFF
-
-					.box_showmore
-						// display: none
-						background-color: #d5d5d5
-						height: 30px
-						color: #FFF
-						display: flex
-						justify-content: center
-						align-items: center
-						font-size: 14px
-						margin: 10px
-
-
 		.data_detail
 			+span(9)
 			margin-bottom: 30px	
+
+
+
+
+
+.post_classification
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.filter_btn
+			display: block
+			width: 100%
+			height: 40px
+			font-size: 16px
+			border-radius: 3px
+			border: 1px solid #c0c0c0
+			color: #888
+			display: flex
+			justify-content: center
+			align-items: center
+		h5 
+			font-size: 18px
+			margin-bottom: 10px
+
+		.toolbox
+			width: 100%
+			// border-bottom: 2px solid #c0c0c0
+			padding: 0
+			padding-bottom: 5px
+			margin-bottom: 10px
+			background-color: #eee 
+			.boxtitle
+				background: #0a93a1
+				height: 43px
+				font-size: 16px
+				padding: 5px 10px
+				color: #FFF
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				position: relative
+				cursor: pointer
+				.toggle_btn
+					position: absolute
+					width: 40px
+					height: 40px
+					right: 0
+					top: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					i 
+						font-size: 18px
+			.box_display
+				// display: none
+				
+				transition: all .3s
+				.boxsearch
+					// display: none
+					padding: 10px
+					border-bottom: 1px solid #ddd
+					input[type=text]
+						height: 35px
+						width: 100%
+						padding: 5px
+					::placeholder
+						color: #999
+						font-size: 13px
+						padding: 5px
+
+				.boxitem
+					// display: none
+					padding: 0 10px
+					margin-bottom: 10px
+					.datalink
+						display: block
+						width: 100%
+						padding: 8px 5px
+						border-bottom: 1px solid #cfcfcf
+						font-size: 14px
+						&:hover
+							background-color: #555
+							color: #FFF
+
+				.box_showmore
+					// display: none
+					background-color: #d5d5d5
+					height: 30px
+					color: #FFF
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 14px
+					margin: 10px
+
+
 
 
 .active
 	height: auto !important
 	display: none !important
 	
+
+
+
+
 
 
 
@@ -417,7 +420,7 @@ $susy: (debug: (image: hide))
 
 		.subject_item
 			+span(3)
-			background: #290
+			// background: #290
 			margin-bottom: 30px
 			position: relative
 			transition: all .3s
@@ -452,15 +455,100 @@ $susy: (debug: (image: hide))
 
 
 
+.asidemenu
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
 
 
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		ul
+			li 
+			 	a 
+			 		display: block
+			 		border: 1px solid #c0c0c0
+			 		padding: 8px 10px
+			 		margin-bottom: 10px
+			 		transition: all .3s
+			 		&:hover
+			 			background: #0a93a1
+			 			color: #FFF
+			 			border: 1px solid #0a93a1
+
+.detail_contnet
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
 
 
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		h2
+			font-size: 30px
+			color: #888
+			line-height: 1.2
+			font-weight: 400
 
+		h6
+			font-size: 20px
+			color: #888
+			line-height: 1.2
+			margin-bottom: 10px
+			font-weight: 400
+		p 
+			font-size: 14px
+			color: #555
+			line-height: 1.5
+		.social_media
+			margin-top: 10px
+			margin-bottom: 30px
+			border-bottom: 1px solid #eee
+			border-top: 1px solid #eee
+			padding: 10px 0
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			.add
+				padding: 5px 10px
+				display: flex
+				justify-content: center
+				border-radius: 3px
+				align-items: center
+				margin-right: 20px
+				background: #eee
+				color: #666
+				font-size: 14px
+				i 
+					font-size: 20px
+					color: #0a93a1
+			i 
+				font-size: 32px
+				margin-right: 15px
+				color: #c0c0c0
 
+		.user_statistics
+			margin-bottom: 30px	
+			.user_statistics_chart
+				border: 1px solid #eee
+				height: 300px
 
+		.interpretation_data
+			margin-bottom: 30px
+			.l-row
+				border-bottom: 1px dashed #c0c0c0
+				padding: 10px 0
+				.interpretation_item_a
+					+span(4)
+					font-size: 14px
+					color: #555
+					line-height: 1.5
+					font-weight: 800
+				.interpretation_item_b
+					+span(8)
+					font-size: 14px
+					color: #555
+					line-height: 1.5
 
 
 

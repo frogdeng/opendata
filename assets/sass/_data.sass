@@ -463,18 +463,22 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+		padding: 0 20px
 		ul
 			li 
 			 	a 
 			 		display: block
-			 		border: 1px solid #c0c0c0
 			 		padding: 8px 10px
 			 		margin-bottom: 10px
 			 		transition: all .3s
+			 		font-size: 17px
+			 		// border: 1px solid #c0c0c0
+			 		background: #06a9ba
+			 		color: #FFF
 			 		&:hover
 			 			background: #0a93a1
 			 			color: #FFF
-			 			border: 1px solid #0a93a1
+			 			// border: 1px solid #0a93a1
 
 .detail_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -484,6 +488,7 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+		padding: 0 20px
 		h2
 			font-size: 30px
 			color: #888
@@ -491,8 +496,8 @@ $susy: (debug: (image: hide))
 			font-weight: 400
 
 		h6
-			font-size: 20px
-			color: #888
+			font-size: 23px
+			color: #06a9ba
 			line-height: 1.2
 			margin-bottom: 10px
 			font-weight: 400
@@ -502,7 +507,7 @@ $susy: (debug: (image: hide))
 			line-height: 1.5
 		.social_media
 			margin-top: 10px
-			margin-bottom: 30px
+			margin-bottom: 40px
 			border-bottom: 1px solid #eee
 			border-top: 1px solid #eee
 			padding: 10px 0
@@ -522,38 +527,76 @@ $susy: (debug: (image: hide))
 				i 
 					font-size: 20px
 					color: #0a93a1
+					margin-right: 5px
 			i 
 				font-size: 32px
 				margin-right: 15px
 				color: #c0c0c0
 
 		.user_statistics
-			margin-bottom: 30px	
+			margin-bottom: 40px	
 			.user_statistics_chart
 				border: 1px solid #eee
 				height: 300px
 
 		.interpretation_data
-			margin-bottom: 30px
+			margin-bottom: 40px
+			border-top: 5px solid #06a9ba
+			border-bottom: 4px solid #06a9ba
 			.l-row
-				border-bottom: 1px dashed #c0c0c0
+				border-bottom: 1px solid #ddd
 				padding: 10px 0
+				&:nth-last-of-type(1)
+					border: none
+				&:nth-last-of-type(odd)
+					background: #f9f9f9
 				.interpretation_item_a
-					+span(4)
-					font-size: 14px
+					+span(3)
+					font-size: 16px
 					color: #555
 					line-height: 1.5
 					font-weight: 800
 				.interpretation_item_b
-					+span(8)
-					font-size: 14px
+					+span(9)
+					font-size: 16px
 					color: #555
 					line-height: 1.5
+		
+
+.download_item
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
 
 
 
-
-
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 40px
+		border-top: 5px solid #06a9ba
+		border-bottom: 4px solid #06a9ba
+		.download_row
+			border-bottom: 1px solid #ddd
+			padding: 10px 0
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&:nth-last-of-type(1)
+				border: none
+			.title
+				width: 50%
+				color: #666
+			.download_btn
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				.d-download
+					font-size: 14px
+					padding: 5px 14px
+					margin-right: 12px
+					color: #FFF
+					cursor: pointer
+	
+					
 
 
 

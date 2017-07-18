@@ -845,21 +845,23 @@ a {
   .asidemenu {
     max-width: 1260px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0 20px; }
   .asidemenu:after {
     content: " ";
     display: block;
     clear: both; }
   .asidemenu ul li a {
     display: block;
-    border: 1px solid #c0c0c0;
     padding: 8px 10px;
     margin-bottom: 10px;
-    transition: all .3s; }
+    transition: all .3s;
+    font-size: 17px;
+    background: #06a9ba;
+    color: #FFF; }
   .asidemenu ul li a:hover {
     background: #0a93a1;
-    color: #FFF;
-    border: 1px solid #0a93a1; } }
+    color: #FFF; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .detail_contnet {
@@ -875,7 +877,8 @@ a {
   .detail_contnet {
     max-width: 1260px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0 20px; }
   .detail_contnet:after {
     content: " ";
     display: block;
@@ -886,8 +889,8 @@ a {
     line-height: 1.2;
     font-weight: 400; }
   .detail_contnet h6 {
-    font-size: 20px;
-    color: #888;
+    font-size: 23px;
+    color: #06a9ba;
     line-height: 1.2;
     margin-bottom: 10px;
     font-weight: 400; }
@@ -897,7 +900,7 @@ a {
     line-height: 1.5; }
   .detail_contnet .social_media {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
     padding: 10px 0;
@@ -922,38 +925,95 @@ a {
     font-size: 14px; }
   .detail_contnet .social_media .add i {
     font-size: 20px;
-    color: #0a93a1; }
+    color: #0a93a1;
+    margin-right: 5px; }
   .detail_contnet .social_media i {
     font-size: 32px;
     margin-right: 15px;
     color: #c0c0c0; }
   .detail_contnet .user_statistics {
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
   .detail_contnet .user_statistics .user_statistics_chart {
     border: 1px solid #eee;
     height: 300px; }
   .detail_contnet .interpretation_data {
-    margin-bottom: 30px; }
+    margin-bottom: 40px;
+    border-top: 5px solid #06a9ba;
+    border-bottom: 4px solid #06a9ba; }
   .detail_contnet .interpretation_data .l-row {
-    border-bottom: 1px dashed #c0c0c0;
+    border-bottom: 1px solid #ddd;
     padding: 10px 0; }
+  .detail_contnet .interpretation_data .l-row:nth-last-of-type(1) {
+    border: none; }
+  .detail_contnet .interpretation_data .l-row:nth-last-of-type(odd) {
+    background: #f9f9f9; }
   .detail_contnet .interpretation_data .l-row .interpretation_item_a {
-    width: 31.74603%;
+    width: 23.4127%;
     float: left;
     margin-left: 0.79365%;
     margin-right: 0.79365%;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     line-height: 1.5;
     font-weight: 800; }
   .detail_contnet .interpretation_data .l-row .interpretation_item_b {
-    width: 65.07937%;
+    width: 73.4127%;
     float: left;
     margin-left: 0.79365%;
     margin-right: 0.79365%;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     line-height: 1.5; } }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .download_item {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .download_item:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .download_item {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-top: 5px solid #06a9ba;
+    border-bottom: 4px solid #06a9ba; }
+  .download_item:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .download_item .download_row {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center; }
+  .download_item .download_row:nth-last-of-type(1) {
+    border: none; }
+  .download_item .download_row .title {
+    width: 50%;
+    color: #666; }
+  .download_item .download_row .download_btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .download_item .download_row .download_btn .d-download {
+    font-size: 14px;
+    padding: 5px 14px;
+    margin-right: 12px;
+    color: #FFF;
+    cursor: pointer; } }
 
 body {
   background: #FFF;

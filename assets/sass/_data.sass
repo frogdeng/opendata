@@ -5,7 +5,7 @@
 
 
 // shorthand
-$desktop: 12 (85px 20px) split
+$desktop: 12 (90px 30px) split
 $pad: 6 (80px 40px) split
 
 $w_desktop: 12 split
@@ -25,19 +25,18 @@ $susy: (debug: (image: hide))
 		height: 20px
 		padding: 10px
 		margin-bottom: 30px
-
 		display: flex
 		justify-content: flex-start
 		align-items: center
 		color: #666
-		font-size: 14px
+		font-size: 16px
 		p 
-			font-size: 14px
+			font-size: 16px
 			margin-right: 10px
 			margin-left: 10px
 			color: #0a93a1
 		a 
-			font-size: 14px
+			font-size: 16px
 			margin-right: 10px
 			margin-left: 10px
 			color: #888 
@@ -52,14 +51,14 @@ $susy: (debug: (image: hide))
 		justify-content: flex-start
 		align-items: center
 		color: #666
-		font-size: 14px
+		font-size: 16px
 		p 
-			font-size: 14px
+			font-size: 16px
 			margin-right: 10px
 			margin-left: 10px
 			color: #0a93a1
 		a 
-			font-size: 14px
+			font-size: 16px
 			margin-right: 10px
 			margin-left: 10px
 			color: #888 
@@ -77,20 +76,21 @@ $susy: (debug: (image: hide))
 		justify-content: flex-start
 		align-items: center
 		p 
-			font-size: 14px
+			font-size: 16px
 			margin-right: 10px
 			margin-left: 10px
 			color: #444
 		.condition
 			padding: 5px 12px 5px 12px
 			margin-right: 12px
-			border: 1px solid #c0c0c0
+			// border: 1px solid #c0c0c0
+			background: #ffb042
 			font-size: 13px
-			color: #888
+			color: #FFF
 			i 
 				font-size: 15px
 				margin-left: 5px
-				color: #c0c0c0
+				color: #FFF
 				transition: all .3s
 				&:hover
 					color: #777
@@ -105,6 +105,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		// height: 50px
+
 		padding: 20px
 		margin-bottom: 30px
 		border-bottom: 1px solid #eee
@@ -112,19 +113,32 @@ $susy: (debug: (image: hide))
 		justify-content: flex-start
 		align-items: center
 		.search
-			margin-right: 10px
+			margin-right: 20px
+			display: flex
+			justify-content: flex-start
+			align-items: center
 			input[type=text]
 				width: 200px
 				height: 35px
 				border: 1px solid #c0c0c0
 				padding: 5px
-				font-size: 14px
+				font-size: 16px
 				color: #555
 			::placeholder
 				padding: 5px
 				color: #999
-				font-size: 12px
-
+				font-size: 16px
+			.submit
+				display: block
+				width: 35px
+				height: 35px
+				background: #027890
+				display: flex
+				justify-content: center
+				align-items: center
+				i 
+					color: #FFF
+					font-size: 18px
 
 		.data_select
 			margin-right: 10px
@@ -135,7 +149,7 @@ $susy: (debug: (image: hide))
 				display: block
 				width: 100%
 				padding: 5px 10px
-				font-size: 12px !important
+				font-size: 16px !important
 				color: #999
 				background-color: #fff
 				border-radius: 0
@@ -144,8 +158,9 @@ $susy: (debug: (image: hide))
 				background: url(../img/arrow.png) no-repeat right 8px
 
 		.data_summary
-			font-size: 14px
+			font-size: 16px
 			color: #888
+			margin-right: 20px
 
 
 
@@ -236,7 +251,7 @@ $susy: (debug: (image: hide))
 						padding: 5px
 					::placeholder
 						color: #999
-						font-size: 13px
+						font-size: 14px
 						padding: 5px
 
 				.boxitem
@@ -248,7 +263,7 @@ $susy: (debug: (image: hide))
 						width: 100%
 						padding: 8px 5px
 						border-bottom: 1px solid #cfcfcf
-						font-size: 14px
+						font-size: 16px
 						&:hover
 							background-color: #555
 							color: #FFF
@@ -261,7 +276,7 @@ $susy: (debug: (image: hide))
 					display: flex
 					justify-content: center
 					align-items: center
-					font-size: 14px
+					font-size: 16px
 					margin: 10px
 
 
@@ -283,24 +298,24 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		h6 
-			font-size: 15px
+			font-size: 16px
 			padding: 5px 0px
 			line-height: 1.2
 			color: #555
 		h5
-			font-size: 15px
+			font-size: 16px
 			padding: 5px 0px
 			line-height: 1.4
 			color: #0a93a1
 		p
-			font-size: 14px
+			font-size: 16px
 			padding: 5px 0px
 			line-height: 1.4
 			color: #888
 		.format
 			width: 80px
 			float: left
-			font-size: 12px
+			font-size: 16px
 			padding: 3px
 			text-align: center
 			color: #FFF
@@ -334,23 +349,23 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		h6 
-			font-size: 15px
+			font-size: 16px
 			padding: 5px 0px
 			line-height: 1.2
 			color: #555
 		h5
-			font-size: 15px
+			font-size: 18px
 			padding: 5px 0px
 			line-height: 1.4
 			color: #0a93a1
 		p
-			font-size: 14px
+			font-size: 16px
 			padding: 5px 0px
 			line-height: 1.4
 			color: #888
 		.format
 			width: 90%
-			font-size: 12px
+			font-size: 16px
 			padding: 3px
 			text-align: center
 			color: #FFF
@@ -396,6 +411,10 @@ $susy: (debug: (image: hide))
 	background: #5b9bd5
 .ODT
 	background: #3366ff
+.XLSX
+	background: #53e0ef
+.XODT
+	background: #53a2ef
 
 
 
@@ -502,7 +521,7 @@ $susy: (debug: (image: hide))
 			margin-bottom: 10px
 			font-weight: 400
 		p 
-			font-size: 14px
+			font-size: 16px
 			color: #555
 			line-height: 1.5
 		.social_media

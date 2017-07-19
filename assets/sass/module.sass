@@ -37,20 +37,19 @@ a
 header
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		height: 114px
+		height: 90px
 		padding-left: 20px
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
 		.logo
-			width: 300px
-			height: 110px
+			
 			display: flex
 			justify-content: center
 			align-items: center
 			img
-				width: 180px
+				width: 280px
 				display: block
 				margin-right: 15px
 				margin-top: 16px
@@ -106,13 +105,13 @@ header
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		height: 114px
+		height: 90px
 		padding-left: 20px
 		display: flex
 		justify-content: flex-start
 		align-items: center
 		.logo
-			width: 350px
+			width: 400px
 			display: flex
 			justify-content: flex-start
 			align-items: center
@@ -186,6 +185,7 @@ header
 					font-weight: 700
 					border-bottom: 3px solid rgba(0,0,0,0)
 					font-size: 18px
+					line-height: 1.2
 					padding: 0 8px
 					margin: 0 10px
 					display: flex
@@ -193,6 +193,10 @@ header
 					align-items: center
 					transition: all .3s
 					&:hover
+					i 
+						font-size: 28px
+						color: #0a93a1
+
 		.lll
 			width: 2px
 			background: #c0e5e8

@@ -893,11 +893,16 @@ a {
     margin-bottom: 10px;
     transition: all .3s;
     font-size: 17px;
-    background: #06a9ba;
-    color: #FFF; }
+    border-left: 5px solid #0b7e8a;
+    background: #eee;
+    color: #999; }
   .asidemenu ul li a:hover {
     background: #0a93a1;
     color: #FFF; } }
+
+.hilight {
+  background: #06a9ba !important;
+  color: #FFF !important; }
 
 @media (min-width: 0) and (max-width: 890px) {
   .detail_contnet {
@@ -971,7 +976,7 @@ a {
     margin-bottom: 40px; }
   .detail_contnet .user_statistics .user_statistics_chart {
     border: 1px solid #eee;
-    height: 300px; }
+    height: 200px; }
   .detail_contnet .interpretation_data {
     margin-bottom: 40px;
     border-top: 5px solid #06a9ba;
@@ -1250,6 +1255,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     background: #fcfcfc;
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: start;
@@ -1268,7 +1274,7 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .deskmenu ul li {
-    position: relative; }
+    display: block; }
   .deskmenu ul li a {
     display: block;
     height: 60px;
@@ -1289,6 +1295,17 @@ a {
   .deskmenu ul li a i {
     font-size: 28px;
     color: #0a93a1; }
+  .deskmenu .submenu {
+    position: absolute;
+    width: 100%;
+    background: #22b1bf;
+    bottom: -25px; }
+  .deskmenu .submenu .submenu_link {
+    display: block;
+    float: left;
+    color: #FFF;
+    margin-right: 20px;
+    font-size: 16px; }
   .deskmenu .lll {
     width: 2px;
     background: #c0e5e8;

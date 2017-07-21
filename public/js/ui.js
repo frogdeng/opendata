@@ -3,15 +3,26 @@ $(function(){
 
  	
 
-	// $('.menu_wrapper').hover(
-	// 	function() {
-	// 		$('.submenu').addClass('submenu-open')	
-	// }, function() {
-	// 		$('.submenu').removeClass('submenu-open').delay( 800 )
-	//   }
-	// );
+
+	$('.deskmenu ul').hover(
+
+		function() {
+
+			if($('.sub_a').length > 0 ){
+				$('.submenu').addClass('submenu-open')	
+			}else{
+				$('.submenu').removeClass('submenu-open')	
+			}	
+
+		}, function() {
+
+			$('.submenu').removeClass('submenu-open').delay( 200 )
+		}
 
 
+	);
+
+	
 
 	// $('.bxslider_1').bxSlider({
 	//   pagerCustom: '.bx-pager_1'

@@ -261,7 +261,7 @@ a {
 
 @media (min-width: 891px) {
   .pages {
-    max-width: 1260px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -408,6 +408,81 @@ a {
     color: #777; } }
 
 @media (min-width: 0) and (max-width: 890px) {
+  .data_search_i {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .data_search_i:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .data_search_i {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .data_search_i:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .data_search_i .search {
+    width: 97.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    background: #eee;
+    padding: 20px;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .data_search_i .search input[type=text] {
+    width: 80%;
+    height: 45px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    font-size: 18px;
+    color: #555; }
+  .data_search_i .search ::-webkit-input-placeholder {
+    padding: 5px;
+    color: #999;
+    font-size: 18px; }
+  .data_search_i .search :-ms-input-placeholder {
+    padding: 5px;
+    color: #999;
+    font-size: 18px; }
+  .data_search_i .search ::placeholder {
+    padding: 5px;
+    color: #999;
+    font-size: 18px; }
+  .data_search_i .search .submit {
+    display: block;
+    width: 55px;
+    height: 45px;
+    background: #027890;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .data_search_i .search .submit i {
+    color: #FFF;
+    font-size: 18px; } }
+
+@media (min-width: 0) and (max-width: 890px) {
   .data_collection {
     max-width: 720px;
     margin-left: auto;
@@ -422,7 +497,7 @@ a {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 10px 0;
     margin-bottom: 30px;
     border-bottom: 1px solid #eee;
     display: -ms-flexbox;
@@ -435,50 +510,14 @@ a {
     content: " ";
     display: block;
     clear: both; }
-  .data_collection .search {
-    margin-right: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .data_collection .search input[type=text] {
-    width: 200px;
-    height: 35px;
-    border: 1px solid #c0c0c0;
-    padding: 5px;
-    font-size: 16px;
-    color: #555; }
-  .data_collection .search ::-webkit-input-placeholder {
-    padding: 5px;
-    color: #999;
-    font-size: 16px; }
-  .data_collection .search :-ms-input-placeholder {
-    padding: 5px;
-    color: #999;
-    font-size: 16px; }
-  .data_collection .search ::placeholder {
-    padding: 5px;
-    color: #999;
-    font-size: 16px; }
-  .data_collection .search .submit {
-    display: block;
-    width: 35px;
-    height: 35px;
-    background: #027890;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .data_collection .search .submit i {
-    color: #FFF;
-    font-size: 18px; }
   .data_collection .data_select {
-    margin-right: 10px;
-    width: 200px; }
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center; }
   .data_collection .data_select select {
     height: 35px;
     border: 1px solid #c0c0c0;
@@ -493,6 +532,7 @@ a {
     -webkit-appearance: none;
     background: url(../img/arrow.png) no-repeat right 8px; }
   .data_collection .data_summary {
+    width: 50%;
     font-size: 16px;
     color: #888;
     margin-right: 20px; } }
@@ -1236,8 +1276,14 @@ a {
 
 .menu_wrapper {
   background: #fcfcfc;
-  border-bottom: 13px solid #ebebeb;
+  border-bottom: 5px solid #ebebeb;
   width: 100%; }
+
+.menu_wrapper .submenu {
+  width: 100%;
+  height: 50px;
+  background: #22b1bf;
+  transition: all .3s; }
 
 @media (min-width: 0) and (max-width: 890px) {
   .deskmenu {
@@ -1266,6 +1312,10 @@ a {
     content: " ";
     display: block;
     clear: both; }
+  .deskmenu .lll {
+    width: 2px;
+    background: #c0e5e8;
+    height: 30px; }
   .deskmenu ul {
     display: -ms-flexbox;
     display: flex;
@@ -1291,25 +1341,52 @@ a {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    transition: all .3s; }
+    transition: all .2s; }
   .deskmenu ul li a i {
     font-size: 28px;
     color: #0a93a1; }
-  .deskmenu .submenu {
-    position: absolute;
-    width: 100%;
-    background: #22b1bf;
-    bottom: -25px; }
-  .deskmenu .submenu .submenu_link {
+  .deskmenu ul li a:hover {
+    color: #222; } }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .sub_a {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .sub_a:after {
+    content: " ";
     display: block;
-    float: left;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .sub_a {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .sub_a:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .sub_a .submenu_link {
+    display: block;
+    height: 50px;
     color: #FFF;
+    font-size: 16px;
     margin-right: 20px;
-    font-size: 16px; }
-  .deskmenu .lll {
-    width: 2px;
-    background: #c0e5e8;
-    height: 30px; } }
+    padding: 0 20px;
+    font-size: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; } }
 
 .hamburg-open {
   right: 0% !important;

@@ -96,6 +96,58 @@ $susy: (debug: (image: hide))
 					color: #777
 
 
+.data_search_i
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-top: 20px
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		.search
+			+span(12)
+			background: #eee
+			padding: 20px
+			border-radius: 3px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			input[type=text]
+				width: 80%
+				height: 45px
+				border: 1px solid #c0c0c0
+				padding: 5px
+				font-size: 18px
+				color: #555
+			::placeholder
+				padding: 5px
+				color: #999
+				font-size: 18px
+			.submit
+				display: block
+				width: 55px
+				height: 45px
+				background: #027890
+				display: flex
+				justify-content: center
+				align-items: center
+				i 
+					color: #FFF
+					font-size: 18px
+
+
+
+
+
+
+
+
+
 .data_collection
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -105,44 +157,18 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		// height: 50px
-
-		padding: 20px
+		padding: 10px 0
 		margin-bottom: 30px
 		border-bottom: 1px solid #eee
 		display: flex
 		justify-content: flex-start
 		align-items: center
-		.search
-			margin-right: 20px
-			display: flex
-			justify-content: flex-start
-			align-items: center
-			input[type=text]
-				width: 200px
-				height: 35px
-				border: 1px solid #c0c0c0
-				padding: 5px
-				font-size: 16px
-				color: #555
-			::placeholder
-				padding: 5px
-				color: #999
-				font-size: 16px
-			.submit
-				display: block
-				width: 35px
-				height: 35px
-				background: #027890
-				display: flex
-				justify-content: center
-				align-items: center
-				i 
-					color: #FFF
-					font-size: 18px
-
+		
 		.data_select
-			margin-right: 10px
-			width: 200px
+			width: 50%
+			display: flex
+			justify-content: flex-end
+			align-items: center
 			select
 				height: 35px
 				border: 1px solid #c0c0c0
@@ -158,9 +184,16 @@ $susy: (debug: (image: hide))
 				background: url(../img/arrow.png) no-repeat right 8px
 
 		.data_summary
+			width: 50%
 			font-size: 16px
 			color: #888
 			margin-right: 20px
+			
+
+
+
+
+
 
 
 

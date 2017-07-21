@@ -2,6 +2,17 @@
 $(function(){
 
  	
+
+	// $('.menu_wrapper').hover(
+	// 	function() {
+	// 		$('.submenu').addClass('submenu-open')	
+	// }, function() {
+	// 		$('.submenu').removeClass('submenu-open').delay( 800 )
+	//   }
+	// );
+
+
+
 	// $('.bxslider_1').bxSlider({
 	//   pagerCustom: '.bx-pager_1'
 	// });	

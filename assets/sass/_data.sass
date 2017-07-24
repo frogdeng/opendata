@@ -14,7 +14,6 @@ $w_pad: 6 split
 $breakpoint_desktop: 891px
 $breakpoint_pad: 0 890px
 
-
 $susy: (debug: (image: hide))
 
 
@@ -655,6 +654,87 @@ $susy: (debug: (image: hide))
 					cursor: pointer
 	
 					
+
+
+
+.applicaitons
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.exsample
+			+span(3)
+			margin-bottom: 40px
+			padding: 0 30px
+			img 
+				margin-bottom: 10px
+			h6 
+				font-size: 20px
+				line-height: 1.4
+				text-align: center
+			p 
+				font-size: 16px
+				line-height: 1.4
+				color: #888
+				text-align: center
+
+
+
+.app_detail
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.app_icon
+			+span(2)
+			padding: 0 20px
+
+
+
+		.app_description
+			+span(9)
+			padding: 0 20px
+			margin-bottom: 40px
+			h6 
+				font-size: 35px
+				margin-bottom: 10px
+				color: #222
+			p 
+				font-size: 16px
+				line-height: 1.4
+				margin-bottom: 20px
+				color: #888
+				text-align: left
+			.ll
+				height: 5px
+				background-color: #02abb9
+				margin-bottom: 20px
+			.t-row
+				display: flex
+				justify-content: flex-start
+				align-items: flex-start
+				border-bottom: 1px solid #eee
+				padding-bottom: 10px
+				margin-bottom: 20px
+				.t-title
+					font-size: 18px
+					font-weight: bolder
+					width: 20%
+					color: #555
+				.t-des
+					width: 80%
+					padding: 0 20px
+					word-wrap: break-word
+					word-break: break-all
+					a 
+						color: #02abb9
+
 
 
 

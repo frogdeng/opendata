@@ -1097,6 +1097,113 @@ a {
     color: #FFF;
     cursor: pointer; } }
 
+@media (min-width: 0) and (max-width: 890px) {
+  .applicaitons {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .applicaitons:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .applicaitons {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+  .applicaitons:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .applicaitons .exsample {
+    width: 22.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    margin-bottom: 40px;
+    padding: 0 30px; }
+  .applicaitons .exsample img {
+    margin-bottom: 10px; }
+  .applicaitons .exsample h6 {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center; }
+  .applicaitons .exsample p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #888;
+    text-align: center; } }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .app_detail {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .app_detail:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .app_detail {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+  .app_detail:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .app_detail .app_icon {
+    width: 14.58333%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    padding: 0 20px; }
+  .app_detail .app_description {
+    width: 72.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    padding: 0 20px;
+    margin-bottom: 40px; }
+  .app_detail .app_description h6 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #222; }
+  .app_detail .app_description p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #888;
+    text-align: left; }
+  .app_detail .app_description .ll {
+    height: 5px;
+    background-color: #02abb9;
+    margin-bottom: 20px; }
+  .app_detail .app_description .t-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+  .app_detail .app_description .t-row .t-title {
+    font-size: 18px;
+    font-weight: bolder;
+    width: 20%;
+    color: #555; }
+  .app_detail .app_description .t-row .t-des {
+    width: 80%;
+    padding: 0 20px;
+    word-wrap: break-word;
+    word-break: break-all; }
+  .app_detail .app_description .t-row .t-des a {
+    color: #02abb9; } }
+
 body {
   background: #FFF;
   font-family: Microsoft JhengHei;

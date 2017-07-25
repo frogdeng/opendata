@@ -306,7 +306,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     height: 20px;
-    padding: 10px;
+    padding: 0 20px;
     margin-bottom: 30px;
     display: -ms-flexbox;
     display: flex;
@@ -337,7 +337,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin-bottom: 20px;
     display: -ms-flexbox;
     display: flex;
@@ -541,7 +541,8 @@ a {
   .data_container {
     max-width: 720px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0 20px; }
   .data_container:after {
     content: " ";
     display: block;
@@ -551,7 +552,8 @@ a {
   .data_container {
     max-width: 1440px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0 20px; }
   .data_container:after {
     content: " ";
     display: block;
@@ -1044,7 +1046,24 @@ a {
     margin-right: 1.04167%;
     font-size: 16px;
     color: #555;
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  .detail_contnet .dashboard {
+    border: 1px solid #3baad2;
+    height: 350px;
+    margin-bottom: 30px;
+    padding: 20px; }
+  .detail_contnet .dashboard_title {
+    height: 40px;
+    background: #3baad2;
+    padding: 0 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    color: #FFF; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .download_item {
@@ -1126,11 +1145,12 @@ a {
   .applicaitons .exsample img {
     margin-bottom: 10px; }
   .applicaitons .exsample h6 {
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center; }
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 10px; }
   .applicaitons .exsample p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     color: #888;
     text-align: center; } }

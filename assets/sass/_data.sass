@@ -22,7 +22,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		height: 20px
-		padding: 10px
+		padding: 0 20px
 		margin-bottom: 30px
 		display: flex
 		justify-content: flex-start
@@ -44,7 +44,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		height: 50px
-		padding: 0 10px
+		padding: 0 20px
 		margin-bottom: 20px
 		display: flex
 		justify-content: flex-start
@@ -201,11 +201,12 @@ $susy: (debug: (image: hide))
 .data_container
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
+		padding: 0 20px
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+		padding: 0 20px
 		.classification_screening
 			margin-bottom: 40px
 			+span(3)
@@ -617,6 +618,27 @@ $susy: (debug: (image: hide))
 					font-size: 16px
 					color: #555
 					line-height: 1.5
+
+
+		.dashboard
+			border: 1px solid #3baad2
+			height: 350px
+			margin-bottom: 30px
+			padding: 20px
+		.dashboard_title
+			height: 40px
+			background: #3baad2
+			padding: 0 20px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			font-size: 18px
+			color: #FFF
+
+
+
+
+
 		
 
 .download_item
@@ -672,11 +694,12 @@ $susy: (debug: (image: hide))
 			img 
 				margin-bottom: 10px
 			h6 
-				font-size: 20px
-				line-height: 1.4
+				font-size: 18px
+				line-height: 1.2
 				text-align: center
+				margin-bottom: 10px
 			p 
-				font-size: 16px
+				font-size: 14px
 				line-height: 1.4
 				color: #888
 				text-align: center

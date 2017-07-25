@@ -330,6 +330,7 @@ $susy: (debug: (image: hide))
 .data_detail_table
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+
 		h6 
 			font-size: 16px
 			padding: 5px 0px
@@ -449,6 +450,33 @@ $susy: (debug: (image: hide))
 .XODT
 	background: #53a2ef
 
+
+
+
+
+.require_data
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.row
+			padding: 8px 0
+			transition: all .3s
+			.col-a
+				+span(4)
+				padding: 0 5px
+			.col-b
+				+span(4)
+				padding: 0 5px			
+			.col-c
+				+span(2)
+				padding: 0 5px
+			.col-d
+				+span(2)
+				padding: 0 5px
 
 
 

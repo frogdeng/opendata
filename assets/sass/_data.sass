@@ -321,19 +321,11 @@ $susy: (debug: (image: hide))
 	
 
 
-
-
-
-
-
-
 .data_detail_table
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
 		h6 
 			font-size: 16px
-			padding: 5px 0px
 			line-height: 1.2
 			color: #555
 		h5
@@ -384,7 +376,6 @@ $susy: (debug: (image: hide))
 		+container
 		h6 
 			font-size: 16px
-			padding: 5px 0px
 			line-height: 1.2
 			color: #555
 		h5
@@ -452,31 +443,6 @@ $susy: (debug: (image: hide))
 
 
 
-
-
-.require_data
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
-
-
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		.row
-			padding: 8px 0
-			transition: all .3s
-			.col-a
-				+span(4)
-				padding: 0 5px
-			.col-b
-				+span(4)
-				padding: 0 5px			
-			.col-c
-				+span(2)
-				padding: 0 5px
-			.col-d
-				+span(2)
-				padding: 0 5px
 
 
 
@@ -579,13 +545,12 @@ $susy: (debug: (image: hide))
 			color: #888
 			line-height: 1.2
 			font-weight: 400
-
 		h6
 			font-size: 23px
 			color: #06a9ba
 			line-height: 1.2
-			margin-bottom: 10px
 			font-weight: 400
+			margin-bottom: 10px
 		p 
 			font-size: 16px
 			color: #555
@@ -667,6 +632,119 @@ $susy: (debug: (image: hide))
 
 
 
+
+.require_data
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		h6 
+			font-size: 16px
+			line-height: 1.2
+			color: #555
+		h5
+			font-size: 18px
+			padding: 5px 0px
+			line-height: 1.4
+			color: #0a93a1
+		p
+			font-size: 16px
+			padding: 5px 0px
+			line-height: 1.4
+			color: #888
+		.row
+			padding: 8px 0
+			transition: all .3s
+			.col-a
+				+span(4)
+				padding: 0 5px
+			.col-b
+				+span(4)
+				padding: 0 5px			
+			.col-c
+				+span(2.5)
+				padding: 0 5px
+			.col-d
+				+span(1.5)
+				padding: 0 5px
+				font-size: 14px
+				color: #888
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.dot
+					width: 10px
+					height: 10px
+					border-radius: 50%
+					margin-bottom: 5px
+					margin-top: 8px
+.replied
+	background: #94c275
+
+.no_replied
+	background: #ff9999
+
+
+
+
+.suggest_form
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 20px 30px
+		border: 1px solid #c0c0c0
+		margin-bottom: 30px
+		.form_title
+			margin-bottom: 20px
+			border-bottom: 1px solid #c0c0c0
+		p 
+			font-size: 16px
+			margin-bottom: 5px
+			color: #888
+		.input_row
+			font-size: 16px
+			color: #888
+			margin-bottom: 20px
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			
+			input[type='text']
+				width: 100%
+				border: 1px solid #ddd
+				height: 35px
+				font-size: 14px
+				padding: 0 10px
+			.i-radio
+				font-size: 14px
+				margin-left: 10px
+				margin-top: 8px
+				input[type= 'radio']
+					margin-right: 3px
+		.summit
+			display: block
+			width: 300px
+			height: 40px
+			margin: 30px auto
+			background: #0a93a1
+			color: #FFF
+			display: flex
+			justify-content: center
+			align-items: center
+			
+
+
+
+
 		
 
 .download_item
@@ -731,6 +809,7 @@ $susy: (debug: (image: hide))
 				line-height: 1.4
 				color: #888
 				text-align: center
+
 
 
 

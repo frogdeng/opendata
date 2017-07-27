@@ -24,6 +24,7 @@ $susy: (debug: (image: hide))
 		height: 20px
 		padding: 0 20px
 		margin-bottom: 30px
+		margin-top: 20px	
 		display: flex
 		justify-content: flex-start
 		align-items: center
@@ -37,7 +38,7 @@ $susy: (debug: (image: hide))
 		a 
 			font-size: 16px
 			margin-right: 10px
-			margin-left: 10px
+			// margin-left: 10px
 			color: #888 
 
 
@@ -46,6 +47,7 @@ $susy: (debug: (image: hide))
 		height: 50px
 		padding: 0 20px
 		margin-bottom: 20px
+		margin-top: 20px
 		display: flex
 		justify-content: flex-start
 		align-items: center
@@ -65,6 +67,30 @@ $susy: (debug: (image: hide))
 .search_condition
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 10px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		p 
+			font-size: 16px
+			margin-right: 10px
+			margin-left: 10px
+			color: #444
+		.condition
+			padding: 5px 12px 5px 12px
+			margin-right: 12px
+			// border: 1px solid #c0c0c0
+			background: #ffb042
+			font-size: 13px
+			color: #FFF
+			i 
+				font-size: 15px
+				margin-left: 5px
+				color: #FFF
+				transition: all .3s
+				&:hover
+					color: #777
 
 
 
@@ -150,7 +176,38 @@ $susy: (debug: (image: hide))
 .data_collection
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 10px 0
+		margin-bottom: 30px
+		border-bottom: 1px solid #eee
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		
+		.data_select
+			width: 50%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			select
+				height: 35px
+				border: 1px solid #c0c0c0
+				display: block
+				width: 100%
+				padding: 5px 10px
+				font-size: 16px !important
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				-webkit-appearance: none
+				background: url(../img/arrow.png) no-repeat right 8px
 
+		.data_summary
+			width: 50%
+			font-size: 16px
+			color: #888
+			margin-right: 20px
+			
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -202,6 +259,13 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		padding: 0 20px
+		.classification_screening
+			margin-bottom: 40px
+			+span(6)
+			
+		.data_detail
+			+span(6)
+			margin-bottom: 30px	
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -869,6 +933,48 @@ $susy: (debug: (image: hide))
 .q-a
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 20px 20px
+		border: 1px solid #eee
+		margin-bottom: 40px
+		h6
+			font-size: 23px
+			color: #06a9ba
+			line-height: 1.2
+			font-weight: 400
+			margin-bottom: 10px	
+		h5
+			font-size: 14px
+			color: #888
+			line-height: 1.2
+			font-weight: 400
+			margin-bottom: 10px
+		p 
+			font-size: 16px
+			color: #888
+			line-height: 1.5
+			margin-bottom: 0px
+		a 
+			color: #55badc
+			display: block
+			font-size: 20px
+			margin-bottom: 10px
+		.q-a_titile
+			border-bottom: 3px solid #06a9ba
+		.q-a_item
+			margin-bottom: 10px
+			border-bottom: 1px solid #eee
+			padding: 20px 10px
+		.q-a_item_detail
+			margin-bottom: 20px
+			border-bottom: 1px solid #eee
+			padding: 20px 10px
+			p 
+				margin-bottom: 20px
+		.q-a_item_content
+			margin-bottom: 20px
+			padding: 20px 10px
+			p 
+				margin-bottom: 20px
 
 
 
@@ -891,7 +997,7 @@ $susy: (debug: (image: hide))
 			margin-bottom: 10px
 		p 
 			font-size: 16px
-			color: #555
+			color: #888
 			line-height: 1.5
 			margin-bottom: 0px
 		a 
@@ -911,13 +1017,18 @@ $susy: (debug: (image: hide))
 			padding: 20px 10px
 			p 
 				margin-bottom: 20px
-
+		.q-a_item_content
+			margin-bottom: 20px
+			padding: 20px 10px
+			p 
+				margin-bottom: 20px
 
 
 .QQ
 	font-size: 22px
 	font-weight: bold
-	font-size: 16px
+	font-size: 18px
 	color: #555
 	margin-bottom: 5px
+	margin-top: 15px
 

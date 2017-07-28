@@ -117,7 +117,7 @@ $susy: (debug: (image: hide))
 			margin-right: 12px
 			// border: 1px solid #c0c0c0
 			background: #ffb042
-			font-size: 13px
+			font-size: 14px
 			color: #FFF
 			i 
 				font-size: 15px
@@ -799,6 +799,7 @@ $susy: (debug: (image: hide))
 .hilight
 	background: #06a9ba !important
 	color: #FFF !important
+	transition: all .5s
 
 .detail_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -828,6 +829,7 @@ $susy: (debug: (image: hide))
 			display: flex
 			justify-content: flex-start
 			align-items: center
+			transition: all .5s
 			.add
 				padding: 5px 10px
 				display: flex
@@ -854,9 +856,12 @@ $susy: (debug: (image: hide))
 				height: 200px
 
 		.interpretation_data
-			margin-bottom: 40px
+			margin-bottom: 10px
 			border-top: 5px solid #06a9ba
 			border-bottom: 4px solid #06a9ba
+			height: 200px
+			overflow: hidden
+
 			.l-row
 				border-bottom: 1px solid #ddd
 				padding: 10px 0
@@ -945,9 +950,11 @@ $susy: (debug: (image: hide))
 				height: 200px
 
 		.interpretation_data
-			margin-bottom: 40px
+			margin-bottom: 10px
 			border-top: 5px solid #06a9ba
 			border-bottom: 4px solid #06a9ba
+			height: 200px
+			overflow: hidden
 			.l-row
 				border-bottom: 1px solid #ddd
 				padding: 10px 0
@@ -984,9 +991,24 @@ $susy: (debug: (image: hide))
 			color: #FFF
 
 
+.switch_btn
+	width: 200px
+	height: 40px
+	margin: 0 auto
+	background: #027890
+	margin-bottom: 40px
+	border-radius: 3px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 16px
+	color: #FFF
+	cursor: pointer
+	i 
+		margin-left: 8px
 
-
-
+.auto_height
+	height: auto !important
 
 .require_data
 	+susy-breakpoint($breakpoint_pad, $pad)

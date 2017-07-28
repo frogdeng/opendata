@@ -1,9 +1,6 @@
 
 $(function(){
 
- 	
-
-
 	$('.deskmenu ul').hover(
 
 		function() {
@@ -57,24 +54,30 @@ $(function(){
 	// });
 
 
+  $(".hamburg").click(function(){
+     $('.aside').delay(200).toggleClass("hamburg-open");
+     $(this).delay(200).toggleClass("cross");
+    });
+
+  $(".go_submenu").click(function(){
+      $('.m-second_bg').addClass("second-open");
+    });
+
+  $(".second-goback").click(function(){
+      $('.m-second_bg').removeClass("second-open");
+      
+    });
 
 
-	//   $(".login_info_btn").click(function(){
-	//      $(this).delay(200).toggleClass("login_active");
-	//       $('.login_info_content').toggleClass("login_info_content_go");
+  $(".hamburg").click(function(){
+      $('.m-second_bg').removeClass("second-open");
+  	});
 
-	//     });
+  $(".switch_btn").click(function(){
+      $('.interpretation_data').toggleClass("auto_height");
+  	});
 
-	//   $(".hamburg").click(function(){
-	//       $('.m-second_bg').removeClass("second-open");
 
-	//   	});
-
-	//   $(".second-goback").click(function(){
-	//       $('.m-second_bg').removeClass("second-open");
-	      
-	//     });
-	
 
 
 	//   $(".show-1").click(function(){

@@ -79,6 +79,15 @@ $(function(){
 
 
 
+  $(".show_aside").click(function(){
+      $('.classification_screening').toggleClass("show_aisde_postsearch");
+  	});
+
+  $(".aside_close").click(function(){
+      $('.classification_screening').removeClass("show_aisde_postsearch");
+  	});
+
+
 
 	//   $(".show-1").click(function(){
 	//       $('.active-1').addClass("second-open");

@@ -524,7 +524,7 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .data_search_i .search input[type=text] {
-    width: 83%;
+    width: 90%;
     height: 45px;
     padding: 5px;
     font-size: 18px;
@@ -724,7 +724,7 @@ a {
     clear: both; }
   .data_container .classification_screening {
     margin-bottom: 40px;
-    background: #37bcc7;
+    background: #FFF;
     padding: 10px 10px;
     width: 94.44444%;
     float: left;
@@ -756,7 +756,7 @@ a {
     clear: both; }
   .data_container .classification_screening {
     margin-bottom: 40px;
-    background: #37bcc7;
+    background: #FFF;
     padding: 10px 10px;
     width: 22.91667%;
     float: left;
@@ -1167,13 +1167,13 @@ a {
     clear: both; } }
 
 .CSV {
-  background: #ffc000; }
+  background: #FF9800; }
 
 .JSON {
   background: #94c275; }
 
 .XLSX {
-  background: #ed7d31; }
+  background: #ff4f00; }
 
 .XLS {
   background: #a36d49; }
@@ -1186,9 +1186,6 @@ a {
 
 .ODT {
   background: #3366ff; }
-
-.XLSX {
-  background: #53e0ef; }
 
 .XODT {
   background: #53a2ef; }

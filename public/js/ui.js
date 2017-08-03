@@ -78,9 +78,13 @@ $(function(){
   	});
 
 
+var top_dis = $('.show_aside').offset().top
+
+
 
   $(".show_aside").click(function(){
       $('.classification_screening').toggleClass("show_aisde_postsearch");
+       $('.classification_screening').css('top', 'top_dis + 200' )
   	});
 
   $(".aside_close").click(function(){

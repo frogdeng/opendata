@@ -731,7 +731,6 @@ a {
     background: #efefef;
     width: 95%;
     position: absolute;
-    top: 375px;
     left: -95%;
     transition: all .3s; }
   .data_container .classification_screening .aside_close {

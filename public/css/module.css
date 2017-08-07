@@ -1500,6 +1500,15 @@ a {
     border: 1px solid #3baad2;
     height: 350px;
     margin-bottom: 30px;
+    padding: 20px; }
+  .detail_contnet .message_inside_cross {
+    width: 94.44444%;
+    float: left;
+    margin-left: 2.77778%;
+    margin-right: 2.77778%;
+    border: 1px solid #3baad2;
+    height: 350px;
+    margin-bottom: 30px;
     padding: 20px; } }
 
 @media (min-width: 891px) {
@@ -1614,6 +1623,15 @@ a {
     color: #FFF; }
   .detail_contnet .message_inside {
     width: 47.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    border: 1px solid #3baad2;
+    height: 350px;
+    margin-bottom: 30px;
+    padding: 20px; }
+  .detail_contnet .message_inside_cross {
+    width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%;

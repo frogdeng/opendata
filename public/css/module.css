@@ -649,6 +649,13 @@ a {
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center; }
+  .data_collection .data_select .cancel_c {
+    display: block;
+    padding: 4px 20px;
+    background: #ce0000;
+    color: #FFF;
+    margin-right: 20px;
+    font-size: 16px; }
   .data_collection .data_select select {
     height: 35px;
     border: 1px solid #c0c0c0;
@@ -695,6 +702,13 @@ a {
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center; }
+  .data_collection .data_select .cancel_c {
+    display: block;
+    padding: 4px 20px;
+    background: #ce0000;
+    color: #FFF;
+    margin-right: 20px;
+    font-size: 16px; }
   .data_collection .data_select select {
     height: 35px;
     border: 1px solid #c0c0c0;
@@ -788,7 +802,15 @@ a {
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .data_container .my_collection {
+    width: 97.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%; }
+  .data_container .my_collection h2 {
+    font-size: 20px;
+    color: #222; } }
 
 .show_aisde_postsearch {
   left: 0 !important; }

@@ -11,8 +11,8 @@ $pad: 6 (80px 40px) split
 $w_desktop: 12 split
 $w_pad: 6 split
 
-$breakpoint_desktop: 891px
-$breakpoint_pad: 0 890px
+$breakpoint_desktop: 991px
+$breakpoint_pad: 0 990px
 
 $susy: (debug: (image: hide))
 
@@ -44,8 +44,8 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+		padding: 0 50px
 		height: 50px
-		padding: 0 20px
 		margin-bottom: 20px
 		margin-top: 40px
 		display: flex
@@ -70,7 +70,7 @@ $susy: (debug: (image: hide))
 .search_condition
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		+span(6)
+		// +span(6)
 		padding: 5px
 		margin-bottom: 20px
 		display: flex
@@ -102,9 +102,10 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 10px 20px
+		padding: 10px 50px
 		margin-bottom: 30px
 		display: flex
+		flex-wrap: wrap
 		justify-content: flex-start
 		align-items: center
 		p
@@ -115,10 +116,12 @@ $susy: (debug: (image: hide))
 		.condition
 			padding: 9px 16px 9px 16px
 			margin-right: 12px
+			margin-bottom: 10px
 			// border: 1px solid #c0c0c0
 			background: #ffb042
 			font-size: 14px
 			color: #FFF
+
 			i
 				font-size: 15px
 				margin-left: 5px
@@ -359,7 +362,7 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 0 20px
+		padding: 0 50px
 		.classification_screening
 			margin-bottom: 40px
 			background: #FFF

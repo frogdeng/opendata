@@ -2931,7 +2931,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     background: #fcfcfc;
-    padding: 0 50px;
+    padding: 0 3%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: start;
@@ -2993,8 +2993,8 @@ a {
     border-bottom: 3px solid transparent;
     font-size: 18px;
     line-height: 1.2;
-    padding: 0 10px;
-    margin: 0 5px;
+    padding: 0 15px;
+    margin: 0 0px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -3007,6 +3007,9 @@ a {
     color: #0a93a1; }
   .deskmenu ul li a:hover {
     background-color: #0a93a1;
+    color: #FFF; }
+  .deskmenu ul li a:hover i {
+    font-size: 28px;
     color: #FFF; }
   .deskmenu ul li:hover .sub_a {
     display: -ms-flexbox;
@@ -3060,9 +3063,6 @@ a {
   margin-top: 6px;
   transition: all .3s ease;
   transform: rotate(-405deg) translate3d(8px, -8px, 0px); }
-
-.header_wrapper {
-  border-bottom: 1px solid #eee; }
 
 .second-open {
   right: 0% !important;

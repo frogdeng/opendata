@@ -234,19 +234,28 @@ header
 			align-items: center
 			li
 				display: block
-				// position: relative
+				position: relative
 				transition: all .1s
+				// background: #108
+				// margin-right: 10px
+				.submenu_bg
+					position: absolute
+					width: 5000px
+					height: 0
+					z-index: 1001
+					background: #22b1bf
+					left: -1000px
 				.sub_a
 					display: none
 					position: absolute
-					width: 100%
+					width: 500px
 					height: 0px
-					z-index: 1000
-					background: #22b1bf
+					z-index: 1100
+					// background: #219
 					justify-content: center
 					align-items: center
 					transition: all .3s
-					left: 0
+					left: -200px
 					.submenu_link
 						display: block
 						color: #FFF
@@ -262,6 +271,7 @@ header
 							background: #222
 				a
 					display: block
+					// width: 104px
 					height: 60px
 					color: #777
 					font-weight: 700
@@ -287,6 +297,8 @@ header
 					.sub_a
 						display: flex
 						height: 50px
+					.submenu_bg
+						height: 50px !important
 
 
 

@@ -2955,20 +2955,27 @@ a {
     align-items: center; }
   .deskmenu ul li {
     display: block;
+    position: relative;
     transition: all .1s; }
+  .deskmenu ul li .submenu_bg {
+    position: absolute;
+    width: 5000px;
+    height: 0;
+    z-index: 1001;
+    background: #22b1bf;
+    left: -1000px; }
   .deskmenu ul li .sub_a {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 500px;
     height: 0px;
-    z-index: 1000;
-    background: #22b1bf;
+    z-index: 1100;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
     transition: all .3s;
-    left: 0; }
+    left: -200px; }
   .deskmenu ul li .sub_a .submenu_link {
     display: block;
     color: #FFF;
@@ -3014,7 +3021,9 @@ a {
   .deskmenu ul li:hover .sub_a {
     display: -ms-flexbox;
     display: flex;
-    height: 50px; } }
+    height: 50px; }
+  .deskmenu ul li:hover .submenu_bg {
+    height: 50px !important; } }
 
 .hamburg-open {
   right: 0% !important;

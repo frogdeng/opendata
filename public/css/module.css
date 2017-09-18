@@ -2964,19 +2964,19 @@ a {
     z-index: 1001;
     background: #22b1bf;
     left: -1000px; }
-  .deskmenu ul li .sub_a {
+  .deskmenu ul li .sub_a_l {
     display: none;
     position: absolute;
-    width: 500px;
+    width: 600px;
     height: 0px;
     z-index: 1100;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -ms-flex-align: center;
     align-items: center;
     transition: all .3s;
-    left: -200px; }
-  .deskmenu ul li .sub_a .submenu_link {
+    left: 0px; }
+  .deskmenu ul li .sub_a_l .submenu_link {
     display: block;
     color: #FFF;
     height: 50px;
@@ -2990,7 +2990,35 @@ a {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center; }
-  .deskmenu ul li .sub_a .submenu_link:hover {
+  .deskmenu ul li .sub_a_l .submenu_link:hover {
+    background: #222; }
+  .deskmenu ul li .sub_a_r {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 0px;
+    z-index: 1100;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all .3s;
+    right: 0px; }
+  .deskmenu ul li .sub_a_r .submenu_link {
+    display: block;
+    color: #FFF;
+    height: 50px;
+    margin-right: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    transition: all .2s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .deskmenu ul li .sub_a_r .submenu_link:hover {
     background: #222; }
   .deskmenu ul li a {
     display: block;
@@ -3018,7 +3046,11 @@ a {
   .deskmenu ul li a:hover i {
     font-size: 28px;
     color: #FFF; }
-  .deskmenu ul li:hover .sub_a {
+  .deskmenu ul li:hover .sub_a_l {
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px; }
+  .deskmenu ul li:hover .sub_a_r {
     display: -ms-flexbox;
     display: flex;
     height: 50px; }

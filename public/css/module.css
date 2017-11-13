@@ -191,8 +191,6 @@ a {
     padding: 10px;
     font-size: 20px;
     color: #222; }
-  .index_container .input_wrapper ::-webkit-input-placeholder {
-    color: #c0c0c0; }
   .index_container .input_wrapper :-ms-input-placeholder {
     color: #c0c0c0; }
   .index_container .input_wrapper ::placeholder {
@@ -254,8 +252,6 @@ a {
     padding: 10px;
     font-size: 20px;
     color: #222; }
-  .index_container .input_wrapper ::-webkit-input-placeholder {
-    color: #c0c0c0; }
   .index_container .input_wrapper :-ms-input-placeholder {
     color: #c0c0c0; }
   .index_container .input_wrapper ::placeholder {
@@ -531,10 +527,6 @@ a {
     font-size: 18px;
     color: #555;
     padding: 10px; }
-  .data_search_i .search ::-webkit-input-placeholder {
-    padding: 5px;
-    color: #999;
-    font-size: 18px; }
   .data_search_i .search :-ms-input-placeholder {
     padding: 5px;
     color: #999;
@@ -592,10 +584,6 @@ a {
     font-size: 18px;
     color: #555;
     padding: 10px; }
-  .data_search_i .search ::-webkit-input-placeholder {
-    padding: 5px;
-    color: #999;
-    font-size: 18px; }
   .data_search_i .search :-ms-input-placeholder {
     padding: 5px;
     color: #999;
@@ -1037,10 +1025,6 @@ a {
     height: 35px;
     width: 100%;
     padding: 5px; }
-  .post_classification .toolbox .box_display .boxsearch ::-webkit-input-placeholder {
-    color: #999;
-    font-size: 14px;
-    padding: 5px; }
   .post_classification .toolbox .box_display .boxsearch :-ms-input-placeholder {
     color: #999;
     font-size: 14px;
@@ -1143,10 +1127,6 @@ a {
   .post_classification .toolbox .box_display .boxsearch input[type=text] {
     height: 35px;
     width: 100%;
-    padding: 5px; }
-  .post_classification .toolbox .box_display .boxsearch ::-webkit-input-placeholder {
-    color: #999;
-    font-size: 14px;
     padding: 5px; }
   .post_classification .toolbox .box_display .boxsearch :-ms-input-placeholder {
     color: #999;

@@ -44,7 +44,7 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 0 50px
+		padding: 0 60px
 		height: 50px
 		margin-bottom: 20px
 		margin-top: 40px
@@ -129,7 +129,13 @@ $susy: (debug: (image: hide))
 				transition: all .3s
 				&:hover
 					color: #777
+.lol_s
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 15px
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
 
 .data_search_i
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -866,12 +872,12 @@ $susy: (debug: (image: hide))
 .line-bottom-1
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		// border-bottom: 1px solid #d0d0d0
+		border-bottom: none
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		// border-bottom: 1px solid #d0d0d0
+		border-bottom: 1px solid #d0d0d0
 
 .CSV
 	background: #FF9800

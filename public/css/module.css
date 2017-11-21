@@ -386,7 +386,7 @@ a {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 50px;
+    padding: 0 60px;
     height: 50px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -492,6 +492,27 @@ a {
     transition: all .3s; }
   .search_condition .condition i:hover {
     color: #777; } }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .lol_s {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; }
+  .lol_s:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .lol_s {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+  .lol_s:after {
+    content: " ";
+    display: block;
+    clear: both; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .data_search_i {
@@ -1415,7 +1436,8 @@ a {
   .line-bottom-1 {
     max-width: 720px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    border-bottom: none; }
   .line-bottom-1:after {
     content: " ";
     display: block;
@@ -1425,7 +1447,8 @@ a {
   .line-bottom-1 {
     max-width: 1440px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    border-bottom: 1px solid #d0d0d0; }
   .line-bottom-1:after {
     content: " ";
     display: block;

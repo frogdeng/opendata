@@ -1404,7 +1404,8 @@ a {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    display: block; }
+    display: block;
+    border-bottom: 2px solid #c0c0c0; }
   .line-bottom-2:after {
     content: " ";
     display: block;
@@ -1424,8 +1425,7 @@ a {
   .line-bottom-1 {
     max-width: 1440px;
     margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #d0d0d0; }
+    margin-right: auto; }
   .line-bottom-1:after {
     content: " ";
     display: block;
